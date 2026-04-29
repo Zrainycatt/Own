@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = 8000;
+const PORT = 8080;
 
 const mimeTypes = {
   '.html': 'text/html',
@@ -16,7 +16,9 @@ const mimeTypes = {
   '.svg': 'image/svg+xml',
   '.mp4': 'video/mp4',
   '.webm': 'video/webm',
-  '.ogg': 'audio/ogg'
+  '.ogg': 'audio/ogg',
+  '.m3u8': 'application/x-mpegURL',
+  '.ts': 'video/MP2T'
 };
 
 const server = http.createServer((req, res) => {

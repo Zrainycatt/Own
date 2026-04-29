@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人作品集 - 首页</title>
+  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a href="index.html" class="logo">PORTFOLIO</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active cursor-target">首页</a></li>
+        <li><a href="about.html" class="cursor-target">关于我</a></li>
+        <li><a href="graphic.html" class="cursor-target">平面作品</a></li>
+        <li><a href="video.html" class="cursor-target">视频作品</a></li>
+        <li><a href="web.html" class="cursor-target">网页作品</a></li>
+        <li><a href="ui.html" class="cursor-target">UI作品</a></li>
+        <li><a href="contact.html" class="cursor-target">联系我</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <video autoPlay loop muted playsInline class="hero-video">
+      <source src="https://res.cloudinary.com/dfonotyfb/video/upload/v1775585556/dds3_1_rqhg7x.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="fade-in">赵坚</h1>
+      <p class="tagline fade-in">多媒体设计师 / 视觉创意</p>
+      <p class="intro fade-in">专注于品牌视觉、UI/UX设计与动态影像创作，用设计传递价值，用创意连接用户。</p>
+      
+      <div class="category-grid">
+        <a href="graphic.html" class="category-card fade-in cursor-target">
+          <i class="fa-solid fa-palette"></i>
+          <h3>平面设计</h3>
+          <p>海报 / H5 / IP形象</p>
+        </a>
+        <a href="video.html" class="category-card fade-in cursor-target">
+          <i class="fa-solid fa-video"></i>
+          <h3>视频动画</h3>
+          <p>宣传片</p>
+        </a>
+        <a href="web.html" class="category-card fade-in cursor-target">
+          <i class="fa-solid fa-globe"></i>
+          <h3>网页设计</h3>
+          <p>官网</p>
+        </a>
+        <a href="ui.html" class="category-card fade-in cursor-target">
+          <i class="fa-solid fa-mobile-screen"></i>
+          <h3>UI设计</h3>
+          <p>APP</p>
+        </a>
+      </div>
+    </div>
+    
+    <div class="scroll-indicator">
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <section class="featured-section">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2>精选作品</h2>
+        <p>近期代表性项目</p>
+      </div>
+      
+      <div class="works-grid">
+        <div class="work-card fade-in cursor-target" onclick="navigateToDetail('1')">
+          <div class="work-image">
+            <img src="img/cyhb.jpg" alt="餐饮品牌海报" class="work-preview">
+          </div>
+          <div class="work-info">
+            <h3>餐饮品牌海报</h3>
+            <p>平面设计 / 2026</p>
+          </div>
+        </div>
+        
+        <div class="work-card fade-in cursor-target" onclick="navigateToDetail('2')">
+          <div class="work-image">
+            <img src="img/h5ct.jpg" alt="阅读类活动H5长图" class="work-preview">
+          </div>
+          <div class="work-info">
+            <h3>阅读类活动H5长图</h3>
+            <p>平面设计 / 2026</p>
+          </div>
+        </div>
+        
+        <div class="work-card fade-in cursor-target" onclick="navigateToDetail('3')">
+          <div class="work-image">
+            <img src="img/ipxx.jpg" alt="餐饮品牌IP形象" class="work-preview">
+          </div>
+          <div class="work-info">
+            <h3>餐饮品牌IP形象</h3>
+            <p>平面设计 / 2026</p>
+          </div>
+        </div>
+        
+        <div class="work-card fade-in cursor-target" onclick="navigateToDetail('4')">
+          <div class="work-image">
+            <img src="img/cygg.jpg" alt="餐饮品牌广告" class="work-preview">
+            <div class="play-overlay">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+          <div class="work-info">
+            <h3>餐饮品牌广告</h3>
+            <p>视频动画 / 2026</p>
+          </div>
+        </div>
+        
+        <div class="work-card fade-in cursor-target" onclick="navigateToDetail('5')">
+          <div class="work-image">
+            <img src="img/ydgw.jpg" alt="有声书阅读类官网" class="work-preview">
+          </div>
+          <div class="work-info">
+            <h3>有声书阅读类官网</h3>
+            <p>网页设计 / 2026</p>
+          </div>
+        </div>
+        
+        <div class="work-card fade-in cursor-target" onclick="navigateToDetail('6')">
+          <div class="work-image">
+            <img src="img/ydapp.jpg" alt="有声书阅读类APP" class="work-preview">
+          </div>
+          <div class="work-info">
+            <h3>有声书阅读类APP</h3>
+            <p>UI设计 / 2026</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>赵坚</h3>
+          <p>多媒体设计师</p>
+          <p>专注于品牌视觉与用户体验设计</p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>联系方式</h3>
+          <p>邮箱: m15014345340@163.com</p>
+          <p>微信: m15014345340</p>
+          <p>电话: 150-1434-5340</p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>社交媒体</h3>
+          <div class="social-links">
+            <a href="#" target="_blank"><i class="fa-brands fa-weixin"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-qq"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-zhihu"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-behance"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; 2026 赵坚. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
